@@ -1,8 +1,6 @@
-#Sanober Waghoo
-#Week 3 Assignment 
-
-
-makeCacheMatrix <- function(x = matrix()) {
+ makeCacheMatrix <- function(x = matrix()) 
+ 
+ {
    inv <- NULL
    set <- function(y){
       x <<- y
@@ -16,7 +14,9 @@ makeCacheMatrix <- function(x = matrix()) {
    
 }
   
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) 
+
+{
    inv <- x$getInverse()
    if(!is.null(inv)) {
      message("getting cached data")
